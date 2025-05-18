@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>Object and Array </h1>
+</body>
+
+<body>
+
+
+    <h2>Object Information:</h2>
+    <p id="demo"></p>
+
+    <h2>Array Information:</h2>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+
+    <script>
+
+        const zoha = {
+            name: "Zoha",
+            age: 12,
+            hobby: "playing football"
+        };
+
+
+        document.getElementById("demo").innerHTML =
+            "Name: " + zoha.name + "<br>" +
+            "Age: " + zoha.age + "<br>" +
+            "Hobby: " + zoha.hobby;
+
+
+        const favColors = ["Blue", "Purple", "Pink", "Green"];
+
+
+        document.getElementById("demo2").innerHTML =
+            "Favorite Colors: " + favColors[0] + ", " + favColors[1] + ", " + favColors[2] + ", " + favColors[3];
+
+
+        const colorsJoined = favColors.join(" | ");
+        favColors.pop();
+
+        document.getElementById("demo3").innerHTML =
+            "Joined Colors: " + colorsJoined + "<br>" +
+            "Colors after pop(): " + favColors.join(", ");
+    </script>
+</body>
+
+</html>
